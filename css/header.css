@@ -1,0 +1,91 @@
+.main-section header {
+    /*height: 76px;*/
+    display: flex;
+    align-items: center;
+    background-color: #d5def7;
+}
+body.dark .main-section header{
+    background-color: #3a3057;
+}
+.main-section header .cont-header{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.main-section header .cont-header-links {
+    width: 100%;
+    padding: 0 20px;
+}
+.main-section header .cont-header img {
+    margin: 0 15px;
+    cursor: pointer;
+}
+.main-section header .cont-header .text {
+    font-size: 50px;
+    font-weight: 600;
+    color: #11101d;
+}
+body.dark .main-section header .cont-header .text {
+    color: #b0a8ce;
+}
+.main-section header .cont-header-links {
+    gap: 50px;
+    padding-left: 100px;
+}
+.main-section header .cont-header-links span {
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    display: flex;
+    align-items: center;
+}
+.main-section header .cont-header-links span i{
+    color: #584985;
+    margin: 0 7px;
+    font-size: 25px;
+}
+body.dark .main-section header .cont-header-links span i{
+    color: #948bad;
+}
+.main-section header .cont-header-links span a{
+    text-decoration: underline #d5def7;
+    color: #11101d;
+    transition: all 0.5s ease;
+}
+body.dark .main-section header .cont-header-links span a{
+    color: #b0a8ce;
+    text-decoration: underline #3a3057;
+}
+.main-section header .cont-header-links span a:hover{
+    text-decoration: underline #3a3057;
+    color: #584985;
+}
+body.dark .main-section header .cont-header-links span a:hover{
+    text-decoration: underline #b4a5e0;
+    color: #b4a5e0;
+}
+.main-section header #botao-alterar-tema{
+    background: none;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.main-section header #botao-alterar-tema .imagem-botao{
+    width: 30px;
+    transition: all 0.5s ease;
+}
+.main-section header #botao-alterar-tema .imagem-botao:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+    .main-section header .cont-header-links {
+        justify-content: center;
+        gap: 15px;
+        padding-left: 0;
+        flex-direction: column;
+    }
+}
